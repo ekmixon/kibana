@@ -744,7 +744,7 @@
     "jest-snapshot": "^26.6.2",
     "jest-specific-snapshot": "2.0.0",
     "jest-styled-components": "^7.0.3",
-    "jest-when": "^3.2.1",
+    "jest-when": "^3.4.0",
     "jimp": "^0.14.0",
     "jsdom": "13.1.0",
     "json5": "^1.0.1",
