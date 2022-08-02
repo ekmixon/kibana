@@ -4,18 +4,18 @@ import os, hashlib, platform, sys
 
 def runcmdsilent(cmd):
   """Executes a string command in the shell"""
-  print(' > ' + cmd)
+  print(f' > {cmd}')
   return os.system(cmd)
 
 def runcmd(cmd):
   """Executes a string command in the shell"""
-  print(' > ' + cmd)
+  print(f' > {cmd}')
   result = os.system(cmd)
   if result != 0:
-    raise Exception(cmd + ' returned ' + str(result))
+    raise Exception(f'{cmd} returned {str(result)}')
 
 def mkdir(dir):
-  print(' > mkdir -p ' + dir)
+  print(f' > mkdir -p {dir}')
   """Makes a directory if it doesn't exist"""
   if not os.path.exists(dir):
     return os.makedirs(dir)

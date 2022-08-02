@@ -10,8 +10,10 @@ arch_name = sys.argv[1] if len(sys.argv) >= 2 else 'undefined'
 build_path = path.abspath(os.curdir)
 src_path = path.abspath(path.join(build_path, 'chromium', 'src'))
 
-if arch_name != 'x64' and arch_name != 'arm64':
-  raise Exception('Unexpected architecture: ' + arch_name + '. `x64` and `arm64` are supported.')
+if arch_name not in ['x64', 'arm64']:
+  raise Exception(
+      f'Unexpected architecture: {arch_name}. `x64` and `arm64` are supported.'
+  )
 
 # Configure git
 print('Configuring git globals...')
@@ -40,4 +42,4 @@ if not path.isdir(chromium_dir):
   os.chdir(chromium_dir)
   runcmd('fetch chromium --nohooks=1 --no-history=1')
 else:
-  print('Directory exists: ' + chromium_dir + '. Skipping chromium fetch.')
+  print(f'Directory exists: {chromium_dir}. Skipping chromium fetch.')
