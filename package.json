@@ -815,7 +815,7 @@
     "unlazy-loader": "^0.1.3",
     "url-loader": "^2.2.0",
     "val-loader": "^1.1.1",
-    "vinyl-fs": "^3.0.3",
+    "vinyl-fs": "^4.0.0",
     "wait-on": "^5.2.1",
     "watchpack": "^1.6.0",
     "webpack": "^4.41.5",
