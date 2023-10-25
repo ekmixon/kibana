@@ -304,7 +304,7 @@
     "p-map": "^4.0.0",
     "p-retry": "^4.2.0",
     "papaparse": "^5.2.0",
-    "pdfmake": "^0.1.65",
+    "pdfmake": "^0.1.71",
     "peggy": "^1.2.0",
     "pluralize": "3.1.0",
     "pngjs": "^3.4.0",
